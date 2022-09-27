@@ -60,4 +60,4 @@ def my_func(x):
         result *= i
     return result
 
-print(my_func(9000))
+# print(my_func(9000))
