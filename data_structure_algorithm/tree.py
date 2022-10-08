@@ -98,7 +98,9 @@ class Tree:
             else:
                 return self.right.find(data)
     def get_size(self):
-        if self.left is not None and self.right is not None:
+        if self is None:
+            return 0
+        elif self.left is not None and self.right is not None:
             return 1 + self.left.get_size() + self.right.get_size()
         elif self.left:
             return 1 + self.left.get_size()
